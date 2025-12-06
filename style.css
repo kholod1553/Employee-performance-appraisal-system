@@ -1,0 +1,86 @@
+/* تنسيقات عامة للجسم والخلفية */
+body {
+    font-family: Arial, sans-serif;
+    /* خلفية زرقاء فاتحة/سماوية كما في الصورة */
+    background-color: #f0f8ff; 
+    margin: 0;
+    padding-top: 50px; /* لإعطاء مسافة من الأعلى */
+}
+
+/* تنسيق العناوين (Welcome to My Web Page) */
+h2 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* ------------------------------------------- */
+/* تنسيقات البطاقة (Calculation Results) */
+/* ------------------------------------------- */
+
+/* لتوسيط البطاقة في الصفحة */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* تبدأ من الأعلى */
+    min-height: 400px;
+}
+
+.card {
+    /* الحجم */
+    width: 400px;
+    max-width: 90%;
+    
+    /* اللون والحدود */
+    background-color: #ffffff;
+    border-radius: 10px; /* زوايا مستديرة */
+    padding: 20px 30px;
+    
+    /* الظل (Shadow) */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    
+    /* الهامش من الأسفل */
+    margin-bottom: 20px;
+}
+
+/* تنسيق عنوان البطاقة */
+.card-title {
+    color: #4a90e2; /* لون أزرق فاتح مميز */
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee; /* خط خفيف أسفل العنوان */
+}
+
+/* خط فاصل (HR) */
+.separator {
+    border: none;
+    border-top: 1px solid #ddd; /* خط فاصل خفيف */
+    margin: 10px 0;
+}
+
+/* تنسيق عناصر النتائج المدخلة (First Number, Second Number) */
+.result-item {
+    display: flex;
+    justify-content: space-between; /* توزيع النص والقيمة على الطرفين */
+    padding: 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.result-item .label {
+    font-weight: normal; /* النص العادي */
+}
+
+.result-item .value {
+    font-weight: bold; /* القيمة تكون أغمق */
+    color: #333;
+}
+
+/* تنسيق نتائج العمليات الحسابية (SubTotal, Subtraction, etc.) */
+.operation-result {
+    font-size: 16px;
+    color: #333;
+    margin: 8px 0;
+    /* قد تحتاج لتعديل خط الفاصل لتكرار نمط الصورة */
+}
